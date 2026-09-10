@@ -27,7 +27,7 @@ window.SITE_CONFIG = {
    * Register an OAuth2 app in the Deriv dashboard to get your client_id,
    * and add your redirect URI (your domain) to it.
    * See https://developers.deriv.com/docs/intro/oauth/ */
-  oauth2ClientId: "34hTPcfEgmIoIrIZV6Aybj", // ← REQUIRED for OAuth sign-in, e.g. 'app12345'
+  oauth2ClientId: "34hTPcfEgmIoIrIZV6Ayb", // ← REQUIRED for OAuth sign-in, e.g. 'app12345'
   oauthRedirectUri: "", // ← leave empty to use the current site URL; must match the registered URI
   oauthScopes: "trade",
   oauthAuthUrl: "https://auth.deriv.com/oauth2/auth",
