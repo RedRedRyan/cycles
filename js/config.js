@@ -15,9 +15,9 @@
  * =========================================================================
  */
 window.SITE_CONFIG = {
-  siteName: "TradersUnit",
+  siteName: "Cycle-Trades",
   tagline: "Deriv trading workspace for disciplined execution",
-  domain: "www.tradersunit.com",
+  domain: "www.cycles-orcin.vercel.app",
 
   /* Your registered Deriv application id (new API) — sent as the
    * `Deriv-App-ID` header for authenticated trading. */
