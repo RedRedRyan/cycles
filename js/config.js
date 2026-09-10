@@ -15,71 +15,71 @@
  * =========================================================================
  */
 window.SITE_CONFIG = {
-    siteName: 'TradersUnit',
-    tagline: 'Deriv trading workspace for disciplined execution',
-    domain: 'www.tradersunit.com',
+  siteName: "TradersUnit",
+  tagline: "Deriv trading workspace for disciplined execution",
+  domain: "www.tradersunit.com",
 
-    /* Your registered Deriv application id (new API) — sent as the
-     * `Deriv-App-ID` header for authenticated trading. */
-    appId: '33Kfcrd5ytoiemPIb4wIj',
+  /* Your registered Deriv application id (new API) — sent as the
+   * `Deriv-App-ID` header for authenticated trading. */
+  appId: "34hTPcfEgmIoIrIZV6Ayb",
 
-    /* OAuth 2.0 (new API) — used when the user clicks "Connect with Deriv".
-     * Register an OAuth2 app in the Deriv dashboard to get your client_id,
-     * and add your redirect URI (your domain) to it.
-     * See https://developers.deriv.com/docs/intro/oauth/ */
-    oauth2ClientId: '33Kfcrd5ytoiemPIb4wIj', // ← REQUIRED for OAuth sign-in, e.g. 'app12345'
-    oauthRedirectUri: '', // ← leave empty to use the current site URL; must match the registered URI
-    oauthScopes: 'trade',
-    oauthAuthUrl: 'https://auth.deriv.com/oauth2/auth',
-    oauthTokenUrl: 'https://auth.deriv.com/oauth2/token',
+  /* OAuth 2.0 (new API) — used when the user clicks "Connect with Deriv".
+   * Register an OAuth2 app in the Deriv dashboard to get your client_id,
+   * and add your redirect URI (your domain) to it.
+   * See https://developers.deriv.com/docs/intro/oauth/ */
+  oauth2ClientId: "34hTPcfEgmIoIrIZV6Aybj", // ← REQUIRED for OAuth sign-in, e.g. 'app12345'
+  oauthRedirectUri: "", // ← leave empty to use the current site URL; must match the registered URI
+  oauthScopes: "trade",
+  oauthAuthUrl: "https://auth.deriv.com/oauth2/auth",
+  oauthTokenUrl: "https://auth.deriv.com/oauth2/token",
 
-    /* OAuth sign-up (see https://developers.deriv.com/llms/oauth.md#sign-up).
-     * Leave `oauthPrompt` empty to only offer sign-in; set it to 'registration'
-     * to open Deriv's sign-up form instead of the login form. */
-    oauthPrompt: '',
+  /* OAuth sign-up (see https://developers.deriv.com/llms/oauth.md#sign-up).
+   * Leave `oauthPrompt` empty to only offer sign-in; set it to 'registration'
+   * to open Deriv's sign-up form instead of the login form. */
+  oauthPrompt: "",
 
-    /* Optional Deriv partner attribution — sent on the OAuth authorization URL
-     * (sidc + utm_* params, or `affiliate_token`). Grab these values from your
-     * referral link in the Deriv Partners dashboard. Empty values are skipped. */
-    partner: {
-        sidc: '',              // e.g. 'FB58247C-6B33-4677-A6AD-168C2D72323C'
-        affiliateToken: '',    // alternative to sidc, e.g. 'CU00001'
-        utm_source: '',        // your affiliate id
-        utm_medium: 'affiliate',
-        utm_campaign: '',
-    },
+  /* Optional Deriv partner attribution — sent on the OAuth authorization URL
+   * (sidc + utm_* params, or `affiliate_token`). Grab these values from your
+   * referral link in the Deriv Partners dashboard. Empty values are skipped. */
+  partner: {
+    sidc: "", // e.g. 'FB58247C-6B33-4677-A6AD-168C2D72323C'
+    affiliateToken: "", // alternative to sidc, e.g. 'CU00001'
+    utm_source: "", // your affiliate id
+    utm_medium: "affiliate",
+    utm_campaign: "",
+  },
 
-    /* Brand / theme tokens (also used by the in-page SEO bootstrap). */
-    primaryColor: '#062E78',
-    secondaryColor: '#020B24',
-    accentColor: '#3D7BFF',
-    accentSoft: '#8FB6FF',
-    upColor: '#2BB673',
-    downColor: '#FF444F',
-    faviconText: 'TU',
+  /* Brand / theme tokens (also used by the in-page SEO bootstrap). */
+  primaryColor: "#062E78",
+  secondaryColor: "#020B24",
+  accentColor: "#3D7BFF",
+  accentSoft: "#8FB6FF",
+  upColor: "#2BB673",
+  downColor: "#FF444F",
+  faviconText: "TU",
 
-    /* Deriv API endpoints (new API — see https://developers.deriv.com/docs/intro/api-overview/). */
-    publicWsEndpoint: 'wss://api.derivws.com/trading/v1/options/ws/public',
-    restBaseUrl: 'https://api.derivws.com',
+  /* Deriv API endpoints (new API — see https://developers.deriv.com/docs/intro/api-overview/). */
+  publicWsEndpoint: "wss://api.derivws.com/trading/v1/options/ws/public",
+  restBaseUrl: "https://api.derivws.com",
 
-    /* Language code for Deriv API responses. */
-    lang: 'EN',
+  /* Language code for Deriv API responses. */
+  lang: "EN",
 
-    /* Keep-alive ping interval in ms (session times out after 2 minutes). */
-    keepAliveMs: 30000,
+  /* Keep-alive ping interval in ms (session times out after 2 minutes). */
+  keepAliveMs: 30000,
 
-    /* Markets shown in the scanner and ticker strip. */
-    scannerSymbols: [
-        { symbol: 'R_10',    name: 'Volatility 10 Index',  tag: '10%' },
-        { symbol: 'R_25',    name: 'Volatility 25 Index',  tag: '25%' },
-        { symbol: 'R_50',    name: 'Volatility 50 Index',  tag: '50%' },
-        { symbol: 'R_75',    name: 'Volatility 75 Index',  tag: '75%' },
-        { symbol: 'R_100',   name: 'Volatility 100 Index', tag: '100%' },
-        { symbol: 'BOOM500', name: 'Boom 500 Index',       tag: 'Jump up' },
-        { symbol: 'CRASH500', name: 'Crash 500 Index',     tag: 'Jump down' },
-        { symbol: '1HZ100V', name: 'Step Index',           tag: '100%' },
-    ],
+  /* Markets shown in the scanner and ticker strip. */
+  scannerSymbols: [
+    { symbol: "R_10", name: "Volatility 10 Index", tag: "10%" },
+    { symbol: "R_25", name: "Volatility 25 Index", tag: "25%" },
+    { symbol: "R_50", name: "Volatility 50 Index", tag: "50%" },
+    { symbol: "R_75", name: "Volatility 75 Index", tag: "75%" },
+    { symbol: "R_100", name: "Volatility 100 Index", tag: "100%" },
+    { symbol: "BOOM500", name: "Boom 500 Index", tag: "Jump up" },
+    { symbol: "CRASH500", name: "Crash 500 Index", tag: "Jump down" },
+    { symbol: "1HZ100V", name: "Step Index", tag: "100%" },
+  ],
 
-    /* Default market loaded on the chart. */
-    defaultSymbol: 'R_100',
+  /* Default market loaded on the chart. */
+  defaultSymbol: "R_100",
 };
